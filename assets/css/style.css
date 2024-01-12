@@ -1,11 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
 
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #6a6972;
   overflow-x: hidden;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+.mint {
+  margin-top: 10rem;
+  font-palette: --Mint;
+  font-family: 'Rocher';
 }
 
 * {
