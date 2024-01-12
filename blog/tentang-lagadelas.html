@@ -17,14 +17,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body>
-    <div class="container pt-20">
+<body style="background-image: url('../assets/images/bg-01.png');background-size: cover;
+background-position: center;
+background-repeat: no-repeat;">
+    <div class="container pt-20 pb-20">
         <div class="">
             <div class="">
                 <h3>Tentang Lagadelas Inisiator 2024</h3>
                 <p class="text mt-3" style="font-size: 12px;">
                     09 September 2024 - 10 min read
                 </p>
+                <div class="about-image text-center mt-50 wow d-flex align-items-center justify-content-center  fadeInRightBig"
+                    data-wow-duration="1s" data-wow-delay="0.5s">
+                    <img src="../assets/images/logo/logo-lagadelas.png" alt="about" width="30%" />
+                </div>
                 <p class="text-content">
                     Lomba Galang Delapan Belas yang kemudian dikenal dengan <strong>LAGADELAS</strong> merupakan wadah
                     yang
@@ -59,7 +65,48 @@
                 </p>
             </div>
         </div>
+        <div class="about-shape-left">
+            <img src="../assets/images/about/about-shape-1.svg" alt="shape" />
+        </div>
     </div>
+
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"> <i class="fa-solid fa-chevron-up"></i> </a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <script>
+        window.onscroll = function () {
+            const backToTop = document.querySelector(".back-to-top");
+            if (
+                document.body.scrollTop > 50 ||
+                document.documentElement.scrollTop > 50
+            ) {
+                backToTop.style.display = "flex";
+            } else {
+                backToTop.style.display = "none";
+            }
+        };
+
+        // ==== for menu scroll
+        const pageLink = document.querySelectorAll(".page-scroll");
+
+        pageLink.forEach((elem) => {
+            elem.addEventListener("click", (e) => {
+                e.preventDefault();
+                document.querySelector(elem.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth",
+                    offsetTop: 1 - 60,
+                });
+            });
+        });
+    </script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/glightbox.min.js"></script>
+    <script src="../assets/js/count-up.min.js"></script>
+    <script src="../assets/js/particles.min.js"></script>
+    <!-- <script src="../assets/js/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

@@ -113,7 +113,10 @@ p {
 .text-content {
   margin-top: 20px;
   font-size: 17px;
+  text-align: justify;
 }
+
+
 
 .swiper {
   width: 100%;
@@ -899,9 +902,13 @@ p {
 
 .single-services .services-content .more {
   margin-top: 30px;
+  width: 70%;
   font-size: 16px;
   font-weight: 400;
-  color: #fe7a7b;
+  color: white;
+  border-radius: 12px;
+  background-color: #28B9C6;
+  padding: 10px 20px;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -942,12 +949,30 @@ p {
   z-index: -1;
 }
 
+.about-shape-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  z-index: -1;
+}
+
+.about-shape-left img {
+  width: 100%;
+  transform: rotate(180deg);
+}
+
 .about-shape-1 img {
   width: 100%;
 }
 
 @media (max-width: 767px) {
   .about-shape-1 {
+    display: none;
+  }
+
+  .about-shape-left {
     display: none;
   }
 }
